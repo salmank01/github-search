@@ -4,3 +4,12 @@
     margin-top: 20px;
     margin-left: 40px;
 }
+.repo-info {
+    display: flex;
+    margin-left: 45px;
+    margin-top: 15px;
+    justify-content: space-around;
+}
+.btns{
+    display: flex;
+}

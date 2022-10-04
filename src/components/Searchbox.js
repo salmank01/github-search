@@ -1,5 +1,4 @@
-import { AutoComplete, Input, Select } from "antd";
-import React, { useState } from "react";
+import {  Input, Select } from "antd";
 const { Option } = Select;
 function Searchbox({ option, setOption, setInput }) {
   const selectOpt = () => {
@@ -20,12 +19,7 @@ function Searchbox({ option, setOption, setInput }) {
           <Option value="Users">Users</Option>
           <Option value="Repos">Repos</Option>
         </Select>
-        <AutoComplete
-          style={{
-            width: "70%",
-          }}
-          placeholder="Search.."
-        />
+        <input type="text" onChange={(e) => setInput(e.target.value)} />
       </Input.Group>
     </div>
   );
